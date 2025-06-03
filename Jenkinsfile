@@ -1,20 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Deploy Application') {
       steps {
-        echo 'Compilation...'
-      }
-    }
-    stage('Test') {
-      steps {
-        echo 'Tests...'
-      }
-    }
-    stage('Deploy') {
-      steps {
-        echo 'Affichage de contenu de index.js'
-        sh 'cat index.js'
+        sh 'docker compose up -d'
       }
     }
   }
