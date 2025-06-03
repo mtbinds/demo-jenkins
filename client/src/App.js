@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Hello there !</h1>
         <h1>Messages:</h1>
         <ul>
           {
