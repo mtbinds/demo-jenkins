@@ -14,7 +14,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Affichage de contenu de index.js'
-        sh 'echo index.js'
+        sh 'cat index.js'
       }
     }
   }
