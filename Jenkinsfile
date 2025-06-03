@@ -13,7 +13,8 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        echo 'Déploiement...'
+        echo 'Affichage de contenu de index.js'
+        echo index.js
       }
     }
   }
